@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+
+    <link rel="stylesheet" href="../css/home_css/upperpart.css">
+    <link rel="stylesheet" href="../css/home_css/footer_.css">
+    <link rel="stylesheet" href="../font/fonts.css">
+    <link rel="stylesheet" href="../css/facility_css/subfaciliy.css">
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer lab</title>
+
+
+
+
+
+  
+
+
+</head>
+<body>
+ 
+
+ 
+  <div class="header">
+   
+    <div class="upper">
+     
+  
+       <div class="name">
+       <img src="../images/logo.jpg" width="131" height="136" alt="">
+        <div class="names"> <h4> shree saraswati secondary school </h4>
+        <p>Satyawati-6 johang , Gulmi</p>
+      <p>ESTD : 2016 BS</p></div>
+         </div>
+       
+       <div class="login"  class='loginbtn' 
+       onclick="document.getElementById('login-form').style.display='block'" >
+           <div class="users">
+         <i class="fa fa-user-circle" id="user"></i><p>Log In</p>
+        </div>
+        
+         <div class="social">
+         <a href="https://www.facebook.com/saraswati.higher.7">  <i class="fab fa-facebook-f"></i></a>
+           <i class="fab fa-twitter"></i>
+           <i class="fab fa-instagram"></i>
+         </div>
+         
+        <div class="login_form_all">
+          <div id='login-form'class='login-page'>
+                      <div class="form-box">
+                          <div class='button-box'>
+                              <div id='btn'></div>
+                              <button type='button'onclick='login()'class='toggle-btn' style="text-align:center;">Log In</button>
+
+                          </div>
+                          <form id='login' class='input-group-login'>
+                              <input type='text'class='input-field'placeholder='Username' required >
+                  <input type='password'class='input-field'placeholder='Enter Password' required>
+                  <input type='checkbox'class='check-box'><span class="remember">Remember Password</span>
+                  <button type='submit'class='submit-btn'>Log in</button>
+              </form>
+            </div>
+          </div>
+
+
+          <script>
+                var x=document.getElementById('login');
+            var z=document.getElementById('btn');
+
+            function login()
+            {
+              x.style.left='50px';
+              y.style.left='450px';
+              z.style.left='0px';
+            }
+            var modal = document.getElementById('login-form');
+            window.onclick = function(event)
+            {
+              if (event.target == modal)
+              {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+       </div>
+   
+       <div class="menu_head">
+        <div class="head_line1"></div>
+        <div class="head_line2"></div>
+        <div class="head_line3"></div>
+    </div>
+  
+  
+  
+  
+  
+  </div>
+  
+    <div class="lower">
+       
+      <ul class="strait">
+  
+        <li  class="top"><a href="../website.html">home</a></li>
+       <li><a href="../facility/facilities.html">facilities</a></li>
+       <li><a href="../staffs.html">staffs</a></li>
+       <li><a href="../cources.html">courses</a></li>
+       <li><a href="../gallery.html">gallery</a></li>
+       <li><a href="../aboutus.html">about us</a></li>   
+       <li><a href="../contactus.html">contact us</a></li>
+     </ul>
+    
+    </div>
+  
+  
+  
+    <script>
+     
+      const navslide = () => {
+          const logins = document.querySelector('.users');
+          const social = document.querySelector('.social');
+          const menu = document.querySelector('.menu_head');
+          const nav = document.querySelector('.strait');
+          const links = document.querySelectorAll('.strait li');
+      
+          
+      
+          menu.addEventListener('click', () => {
+              nav.classList.toggle('nav-active');
+              logins.classList.toggle('user-active');
+              social.classList.toggle('user-active');
+      
+          links.forEach((link, index) => {
+            if(link.style.animation){
+               link.style.animation = ''; 
+            }
+            else{  
+              link.style.animation = `linkfade 0.5s ease forwards ${index / 7 + 1.2}s`;
+            }
+          
+          
+          });
+        menu.classList.toggle('toggle');
+      
+       });
+      }
+      navslide();
+      
+    </script>
+      
+   </div>
+
+ 
+              <br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="upper_name">
+     <h2>Computer lab</h2>
+   </div> 
+
+<div class="color">
+
+</div>
+
+<div class="image">
+  <img src="../images/computerlab.jpg" alt="" width="955"height="546">
+</div>
+<div class="all_text">
+<div class="comp_text">
+<p class="para">
+  In today's education system theory is incomplete without practical. 
+  In order to meet the actual goal of education practical and research is the most important factor.
+   For the best practical result our school has established a computer lab.
+    The Lab of this school is very effective containing all together 20 computers with internet connection.
+   students can perform their programs, presentation and other research in lab. 
+   
+   ​<br><br>
+
+   In computer lab students can invest their free time in learning programming, 
+   automation and to improve basic computer skills. That will help them later to define their career goals, 
+   entrepreneurship, and job opportunities. For skills development, students need to practice. And to do that effectively they need a computer lab. 
+   To practice what teachers have taught in the class, they need a computer lab.  
+  ​<br>
+  <br>
+
+  Computer education in schools plays an important role in students career development. Computer with the 
+  internet is the most powerful device that students can use to learn new skills and a more advanced
+   version of current lessons.  
+  
+  
+<a href="facilities.html"><button class="back">Back to Facilities</button></a>
+</div>
+
+</div>
+
+  
+<br><br>
+<div class="footer">
+ 
+
+
+    <div class="col1">
+    <img src="../images/logo footer.jpg" alt="" width="151" height="156" >
+    <div class="text">
+      <h4>Shree Saraswati</h4>
+      <p>Secondary School</p>
+    </div>
+    
+  </div>
+
+
+
+    <div class="col3"><br><br>
+      <h4>Contact Us</h4><br><br>
+      <h3>Address:</h3>
+      <div class="p">satyawati-6 johang<br><br></div>
+      <h3>Email:</h3>
+      <div class="p">shreesaraswati@gmail.com<br><br></div>
+      <h3>phone no.</h3>
+      <div class="p">0123456789<br></div>
+    </div>
+ 
+  
+   <div class="col4">
+    <br><br><h4>Facebook</h4>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsaraswatischool60&tabs=timeline&width=290&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+     width="350" height="313"
+     style="border:none;overflow:solid;margin-top:20px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+   </div>
+
+</div>
+
+</body>
+</html>

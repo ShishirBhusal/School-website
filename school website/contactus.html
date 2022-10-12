@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+
+
+    <link rel="stylesheet" href="css/home_css/upperpart.css">
+    <link rel="stylesheet" href="css/home_css/footer_.css">
+    <link rel="stylesheet" href="css/contactus/form.css">
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>others</title>
+
+
+
+
+
+
+
+</head>
+<body>
+   
+  <div class="header">
+   
+    <div class="upper">
+     
+  
+       <div class="name">
+       <img src="images/logo.jpg" width="131" height="136" alt="">
+        <div class="names"> <h4> shree saraswati secondary school </h4>
+        <p>Satyawati-6 johang , Gulmi</p>
+      <p>ESTD : 2016 BS</p></div>
+         </div>
+       
+       <div class="login"  class='loginbtn' 
+       onclick="document.getElementById('login-form').style.display='block'" >
+           <div class="users">
+         <i class="fa fa-user-circle" id="user"></i><p>Log In</p>
+        </div>
+        
+         <div class="social">
+         <a href="https://www.facebook.com/saraswati.higher.7">  <i class="fab fa-facebook-f"></i></a>
+           <i class="fab fa-twitter"></i>
+           <i class="fab fa-instagram"></i>
+         </div>
+         
+        <div class="login_form_all">
+          <div id='login-form'class='login-page'>
+                      <div class="form-box">
+                          <div class='button-box'>
+                              <div id='btn'></div>
+                              <button type='button'onclick='login()'class='toggle-btn' style="text-align:center;">Log In</button>
+
+                          </div>
+                          <form id='login' class='input-group-login'>
+                              <input type='text'class='input-field'placeholder='Username' required >
+                  <input type='password'class='input-field'placeholder='Enter Password' required>
+                  <input type='checkbox'class='check-box'><span class="remember">Remember Password</span>
+                  <button type='submit'class='submit-btn'>Log in</button>
+              </form>
+            </div>
+          </div>
+
+
+          <script>
+                var x=document.getElementById('login');
+            var z=document.getElementById('btn');
+
+            function login()
+            {
+              x.style.left='50px';
+              y.style.left='450px';
+              z.style.left='0px';
+            }
+            var modal = document.getElementById('login-form');
+            window.onclick = function(event)
+            {
+              if (event.target == modal)
+              {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+
+       </div>
+   
+       <div class="menu_head">
+        <div class="head_line1"></div>
+        <div class="head_line2"></div>
+        <div class="head_line3"></div>
+    </div>
+  
+  
+  
+  
+  
+  </div>
+  
+    <div class="lower">
+       
+      <ul class="strait">
+  
+        <li  class="top"><a href="website.html">home</a></li>
+       <li><a href="facility/facilities.html">facilities</a></li>
+       <li><a href="staffs.html">staffs</a></li>
+       <li><a href="cources.html">courses</a></li>
+       <li><a href="gallery.html">gallery</a></li>
+       <li><a href="aboutus.html">about us</a></li>   
+       <li><a href="contactus.html">contact us</a></li>
+     </ul>
+    
+    </div>
+  
+  
+  
+    <script>
+     
+      const navslide = () => {
+          const logins = document.querySelector('.users');
+          const social = document.querySelector('.social');
+          const menu = document.querySelector('.menu_head');
+          const nav = document.querySelector('.strait');
+          const links = document.querySelectorAll('.strait li');
+      
+          
+      
+          menu.addEventListener('click', () => {
+              nav.classList.toggle('nav-active');
+              logins.classList.toggle('user-active');
+              social.classList.toggle('user-active');
+      
+          links.forEach((link, index) => {
+            if(link.style.animation){
+               link.style.animation = ''; 
+            }
+            else{  
+              link.style.animation = `linkfade 0.5s ease forwards ${index / 7 + 1.2}s`;
+            }
+          
+          
+          });
+        menu.classList.toggle('toggle');
+      
+       });
+      }
+      navslide();
+      
+    </script>
+      
+   </div>
+ 
+              <br><br><br><br><br><br><br><br><br><br><br>
+
+              <div class="contact_name">
+                <h2>CONTACT US</h2>
+                </div>
+                
+                
+                
+                <div class="others_form">
+                  
+                    <div class="others">
+                        <div class="others_col1">
+                          
+                                 <h3>Visit the School</h3><br><br><br>
+                                 <h2>ADDRESS</h2><br><br>
+                                 <p>Satyawati-6 johang , Gulmi</p>
+                                   <br><br>
+                                 <h2>INFORMATION</h2><br><br>
+                                 <p>For information or questions :</p>
+                                 <br><br>
+                                 <h2>EMAIL US</h2><br><br>
+                                 <p class="email">shreesaraswati60@gmail.com</p>
+                                 <br><br>
+                                 <h2>PHONE NO.</h2><br><br>
+                                 <P>0123456789</P>
+                                 <br><br>
+                                 <H2>OFFICE HOURS</H2><br><br>
+                                 <P>While school is in session our 
+                                  staff offices are open from :</P><br><br>
+                                 <P style="color: #5C5ADB; font-size: 22px;">10:00 am - 4:00 pm</P>
+                                  
+                      </div>
+                
+                      <div class="others_col2">
+                        <img src="images/contactus.jpg" alt="" width="100%"height="100%">
+                      </div>
+                       
+                 
+                    </div>
+                 
+                 
+                    <div class="form">
+                     <div class="form_col1">
+
+
+
+                      <div class="mapouter"><div class="gmap_canvas"><iframe width="617" height="870" id="gmap_canvas"
+                         src="https://maps.google.com/maps?q=%E0%A4%B8%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80%20%E0%A4%89%E0%A4%9A%E0%A5%8D%E0%A4%9A%20%E0%A4%AE%E0%A4%BE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%AE%E0%A4%BF%E0%A4%95%20%E0%A4%AC%E0%A4%BF%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B2%E0%A4%AF%20%E0%A4%9C%E0%A5%8B%E0%A4%B9%E0%A4%BE%E0%A4%99%20%E0%A4%97%E0%A5%81%E0%A4%B2%E0%A5%8D%E0%A4%AE%E0%A4%BF%20,%20johang&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+                          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                          <style>
+                          .mapouter{position:relative;height:905px;width:1005px;}</style>
+                        <style>
+                          .gmap_canvas {overflow:hidden;background:none!important;height:905px;width:1005px;}</style></div></div>
+                    
+                  
+                  
+                  </div>  
+                    
+                    <div class="form_col2">
+                        <h3>You Can Also Contact Us By Form</h3><br><br>
+                            <div class="container">
+                                <form action="#">
+                                   <div class="form-row">
+                                      <div class="input-data">
+                                         <input type="text" required>
+                                         <div class="underline"></div>
+                                         <label for="">First Name</label>
+                                      </div>
+                                      <div class="input-data">
+                                         <input type="text" required>
+                                         <div class="underline"></div>
+                                         <label for="">Last Name</label>
+                                      </div>
+                                   </div>
+                                   <div class="form-row">
+                                      <div class="input-data">
+                                         <input type="email" required>
+                                         <div class="underline"></div>
+                                         <label for="">Email Address</label>
+                                      </div>
+                                      <div class="input-data">
+                                         <input type="number" required>
+                                         <div class="underline"></div>
+                                         <label for="">Phone No.</label>
+                                      </div>
+                                   </div>
+                                   <div class="form-row">
+                                   <div class="input-data textarea">
+                                      <textarea rows="8" cols="80" required></textarea>
+                                      <br />
+                                      <div class="underline"></div>
+                                      <label for="">Write your message</label>
+                                      <br />
+                                      <div class="form-row submit-btn">
+                                         <div class="input-data">
+                                            <div class="inner"></div>
+                                            <input type="submit" value="submit">
+                                         </div>
+                                      </div>
+                                </form>
+                                </div>
+                        
+                     </div>
+                         
+                     
+                        
+                 
+                 
+                 
+                    </div>
+                 
+                 
+                 
+                 
+                 </div>
+ 
+<br><br>
+
+</body>
+</html>
